@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title> Encriptador - Decencriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <main>
+            <div class="container">
+
+                <section class="encriptador">
+
+                    <div class="logo">
+                        <img src="images/a.png">
+                    </div>
+
+                    <div class="texto">
+                        <textarea name="mensaje" class="mnsj" id="mnsj" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea> 
+                    </div>
+
+                    <div class="excepciones">
+                        <img src="images/Vector.png">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                        
+                    <div class="buttons">
+                        <button class="encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                        <button class="desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </section>
+
+                <section class="resultado">
+                    <img src="images/Muñeco.png">
+                    <div class="mnsj-encrip" id="mnsj-encrip">
+                        <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                        <p id="p1">Ingresa el texto que deseas encriptar o desencriptar</p>
+                        <!--<textarea name="mnsj2" id="mnsj2" cols="30" rows="10" class="mnsj2"></textarea>-->
+                    </div>
+
+                    <div>
+                        <!--<button class="copiar" type="button" onclick="">copiar</button>-->
+                    </div>
+
+                </section>
+
+            </div>
+        </main>
+    </body>
+
+
+</html>
