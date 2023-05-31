@@ -35,16 +35,17 @@
                 </section>
 
                 <section class="resultado">
-                    <img src="images/Muñeco.png">
+                    <img src="images/Muneco.png" id="mono">
                     <div class="mnsj-encrip" id="mnsj-encrip">
                         <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
-                        <p id="p1">Ingresa el texto que deseas encriptar o desencriptar</p>
-                        <!--<textarea name="mnsj2" id="mnsj2" cols="30" rows="10" class="mnsj2"></textarea>-->
+                        <p id="loc">Ingresa el texto que deseas encriptar o desencriptar</p>
                     </div>
 
-                    <div>
-                        <!--<button class="copiar" type="button" onclick="">copiar</button>-->
+                    <div class="copiar-btn" id="copiar-btn">
+                        <button class="copiar" type="button" id="copiar">Copiar</button>
                     </div>
+
+                    <textarea name="mnsj2" id="mnsj2" cols="30" rows="10" class="mnsj2"></textarea>
 
                 </section>
 
@@ -52,5 +53,6 @@
         </main>
     </body>
 
-
+    <script src="encriptar.js"></script>
+    <script src="index.js"></script>
 </html>
