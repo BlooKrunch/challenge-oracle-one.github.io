@@ -253,6 +253,12 @@
     color: #0A3871;
 }
 
+.copiar:hover{
+    margin: 0.3%;
+    width: 83%;
+    padding: 3%;
+}
+
 .copiar-btn, .mnsj2{
     display: none;
     visibility: hidden;
