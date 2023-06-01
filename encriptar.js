@@ -32,7 +32,7 @@ function encriptar() {
     map1.set('o', 'ober');
     map1.set('u', 'ufat');
 
-    console.log(text1.length);
+    //console.log(text1.length);
 
     let aux = "";
 
