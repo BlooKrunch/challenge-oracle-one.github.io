@@ -12,21 +12,50 @@ function desencriptar(){
 
     let aux = "";
 
-    for(let i = 0; i <= text1.length-1; i++){
-        if(map2.get(text1.charAt(i)) == undefined){
-            aux = aux + text1.charAt(i);
-        }else{
-            aux = aux + text1.charAt(i);
-            i = i + map2.get(text1.charAt(i))
-        }
-        console.log(i);
-    }
+    if(text1.length != 0){
 
-    text2.value = aux;
+        //Ocultar elementos
+        let imagen = document.getElementById("mono");
+        imagen.style.display = "none";
+        imagen.style.visibility = "hidden";
+        let bloque_texto = document.getElementById("mnsj-encrip");
+        bloque_texto.style.display = "none";
+        bloque_texto.style.visibility = "hidden";
+
+        let texto = document.getElementById("titulo-mensaje");
+        texto.style.display = "none";
+        texto.style.visibility = "hidden";
+        let p = document.getElementById("loc");
+        p.style.display = "none";
+        p.style.visibility = "hidden";
+
+        let texto2 = document.getElementById("mnsj2");
+        texto2.style.display = "block";
+        texto2.style.visibility = "visible";
+        let bloque2 = document.getElementById("copiar-btn");
+        bloque2.style.display =  "block";
+        bloque2.style.visibility = "visible";
+
+        //Desencriptar
+        for(let i = 0; i <= text1.length-1; i++){
+            if(map2.get(text1.charAt(i)) == undefined){
+                aux = aux + text1.charAt(i);
+            }else{
+                aux = aux + text1.charAt(i);
+                i = i + map2.get(text1.charAt(i))
+            }
+            console.log(i);
+        }
+
+        text2.value = aux;
+
+    }else{
+        alert("No hay un mensaje para desencriptar");
+    }
 }
 
 function copiar(){
-     // Get the text field
+  // Get the text field
   let copyText = document.getElementById("mnsj2");
 
   // Select the text field
